@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones — Protnews AI</title>
+  <meta name="description" content="Términos y Condiciones de Uso, Privacidad, Memoria del Servidor y Protección a Menores de Protnews AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090a10;
+      --bg-card: rgba(22, 27, 46, 0.7);
+      --bg-card-hover: rgba(30, 37, 64, 0.85);
+      --border-color: rgba(99, 102, 241, 0.2);
+      --border-glow: rgba(99, 102, 241, 0.45);
+      --primary: #6366f1;
+      --primary-glow: #818cf8;
+      --accent: #ec4899;
+      --accent-glow: #f472b6;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, var(--bg-dark) 60%);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navbar / Header */
+    header {
+      padding: 40px 0 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid var(--border-color);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-glow);
+      margin-bottom: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--success);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--success);
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 30%, var(--primary-glow) 70%, var(--accent-glow) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto 20px;
+    }
+
+    .official-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88rem;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: #38bdf8;
+      display: inline-block;
+    }
+
+    /* Policy Grid & Cards */
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px;
+      backdrop-filter: blur(16px);
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      border-color: var(--border-glow);
+      background: var(--bg-card-hover);
+      box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.2);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid var(--border-color);
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .card-content {
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .highlight-box {
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 4px solid var(--primary);
+    }
+
+    .highlight-box.warning {
+      border-left-color: var(--warning);
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .highlight-box.danger {
+      border-left-color: var(--danger);
+      background: rgba(239, 68, 68, 0.08);
+    }
+
+    .highlight-box.success {
+      border-left-color: var(--success);
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f472b6;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+
+    /* Interactive Simulator */
+    .simulator {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .sim-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 52px;
+      height: 28px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #334155;
+      transition: .3s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--success);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 32px;
+    }
+
+    footer a {
+      color: var(--primary-glow);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Normativa Oficial y Vigente — Versión 2.5
+      </div>
+      <h1>Términos y Condiciones de Protnews AI</h1>
+      <p class="subtitle">
+        Directrices oficiales sobre privacidad de chats, memoria del servidor, protección a menores de edad y procesamiento de datos.
+      </p>
+      <div class="official-url">
+        🔗 https://protnews.git.io/terminos y condiciones
+      </div>
+    </header>
+
+    <div class="grid">
+
+      <!-- Cláusula 1: Memoria e Indexación de Chats (RAG) -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon">🧠</div>
+          <h2 class="card-title">1. Lectura, Indexación y Memoria de Chats del Servidor</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Para proporcionar respuestas contextuales, hilo de conversación natural y búsqueda de eventos o temas conversados previamente en el servidor (RAG - Retrieval-Augmented Generation), <strong>Protnews AI cuenta con la función de registrar e indexar los mensajes públicos del servidor</strong>.
+          </p>
+          
+          <div class="highlight-box success">
+            <strong>⚙️ Estado Predeterminado:</strong> Esta función se encuentra <strong>ACTIVADA de forma predeterminada</strong> al invitar al bot, permitiendo una experiencia de IA conversacional completa desde el primer momento.
+          </div>
+
+          <p style="margin-top: 14px;">
+            <strong>Control Total para Administradores:</strong> Los administradores del servidor pueden activar o desactivar esta función en cualquier momento utilizando el comando:
+          </p>
+          <p style="margin-top: 8px;">
+            <code>/servermemory modo: [ON / OFF]</code>
+          </p>
+
+          <!-- Simulador interactivo -->
+          <div class="simulator">
+            <div class="sim-header">
+              <div>
+                <strong>Estado de Memoria RAG en este Servidor:</strong>
+                <div id="sim-status" style="color: var(--success); font-size: 0.9rem; margin-top: 4px;">
+                  🟢 ACTIVADA (Indexación y memoria de chat habilitadas)
+                </div>
+              </div>
+              <label class="toggle-switch">
+                <input type="checkbox" id="sim-toggle" checked onchange="toggleSimMemory(this)">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);" id="sim-desc">
+              La IA indexa consultas y conversaciones para recordar temas pasados ("¿quién es mi ex?", "¿qué foto compartimos ayer?").
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cláusula 2: Protección a Menores de 13 Años -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon">🛡️</div>
+          <h2 class="card-title">2. Protección de Menores y Política de Edad (< 13 Años)</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Protnews AI cumple estrictamente con los <strong>Términos de Servicio de Discord</strong> y la legislación internacional sobre protección de la privacidad infantil en línea (<strong>COPPA</strong>).
+          </p>
+
+          <div class="highlight-box danger">
+            <strong>🚨 Protocolo de Detección y Remisión al Staff:</strong><br>
+            Si el sistema de inteligencia artificial o los filtros de seguridad detectan indicios o declaraciones explícitas de que un usuario es <strong>menor de 13 años</strong> (ejemplo: <em>"tengo 10 años"</em>, <em>"cumplí 11"</em>, <em>"nací en 2018"</em>), se activan las siguientes medidas:
+            <ul style="margin-left: 20px; margin-top: 8px;">
+              <li>Se emite una advertencia automática de seguridad.</li>
+              <li>El caso y los datos del usuario son <strong>remitidos de inmediato a revisión formal del Staff</strong> del servidor.</li>
+              <li>La cuenta queda sujeta a verificación de edad o suspensión de acceso a los servicios de IA.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cláusula 3: Privacidad Volátil y Auto-Limpieza de RAM -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon">🧹</div>
+          <h2 class="card-title">3. Privacidad de Memoria Volátil y Auto-Limpieza de RAM</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            A diferencia de otros sistemas de IA centralizados, Protnews AI opera con una estricta política de <strong>cero retención de tensores en memoria volátil</strong>:
+          </p>
+          <div class="highlight-box">
+            <strong>Inferencia On-Demand & Auto-Unload:</strong> Tras generar cada respuesta, los pesos del modelo de IA se descargan por completo de la memoria RAM del servidor/Raspberry Pi (<code>unload_all()</code> y <code>gc.collect()</code>), asegurando que ninguna información privada o sensible quede almacenada en la memoria volátil del procesador.
+          </div>
+        </div>
+      </article>
+
+      <!-- Cláusula 4: Análisis de Imágenes y Verificación Web -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-icon">🖼️</div>
+          <h2 class="card-title">4. Análisis Visual de Imágenes y Verificación Anti-Alucinación</h2>
+        </div>
+        <div class="card-content">
+          <p>
+            Las imágenes analizadas a través de <code>/ai</code> son procesadas localmente en menos de 10 segundos, optimizadas a resoluciones ligeras (224-384px) y analizadas con detectores de imágenes trampa (pixel bombs, imágenes planas o corruptas).
+          </p>
+          <p style="margin-top: 10px;">
+            Las consultas factuales complejas son verificadas mediante búsqueda en tiempo real en DuckDuckGo con índice de confianza para evitar alucinaciones.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <footer>
+      <p>© 2026 Protnews AI — Desarrollado para servidores de Discord de alta fidelidad.</p>
+      <p style="margin-top: 8px;">
+        URL Oficial: <a href="https://protnews.git.io/terminos">https://protnews.git.io/terminos y condiciones</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleSimMemory(checkbox) {
+      const statusEl = document.getElementById("sim-status");
+      const descEl = document.getElementById("sim-desc");
+      if (checkbox.checked) {
+        statusEl.innerHTML = "🟢 ACTIVADA (Indexación y memoria de chat habilitadas)";
+        statusEl.style.color = "var(--success)";
+        descEl.innerText = "La IA indexa consultas y conversaciones para recordar temas pasados ('¿quién es mi ex?', '¿qué foto compartimos ayer?').";
+      } else {
+        statusEl.innerHTML = "🔴 DESACTIVADA (Modo de privacidad estricta activado)";
+        statusEl.style.color = "var(--warning)";
+        descEl.innerText = "La IA solo responderá preguntas directas sin almacenar ni buscar contexto de mensajes históricos del servidor.";
+      }
+    }
+  </script>
+</body>
+</html>
