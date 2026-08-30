@@ -370,7 +370,7 @@
             A diferencia de otros sistemas de IA centralizados, Protnews AI opera con una estricta política de <strong>cero retención de tensores en memoria volátil</strong>:
           </p>
           <div class="highlight-box">
-            <strong>Inferencia On-Demand & Auto-Unload:</strong> Tras generar cada respuesta, los pesos del modelo de IA se descargan por completo de la memoria RAM del servidor/Raspberry Pi (<code>unload_all()</code> y <code>gc.collect()</code>), asegurando que ninguna información privada o sensible quede almacenada en la memoria volátil del procesador.
+            <strong>Inferencia On-Demand & Auto-Unload:</strong> Tras generar cada respuesta, los pesos del modelo de IA se descargan por completo de la memoria RAM de los servidores de procesamiento (<code>unload_all()</code> y <code>gc.collect()</code>), asegurando que ninguna información privada o sensible quede almacenada en la memoria volátil del procesador.
           </div>
         </div>
       </article>
